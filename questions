@@ -1,30 +1,4 @@
-import 'package:flutter/material.dart';
-
-simulateQuestions() {
-  List<dynamic> questions = [];
-
-  // Mecânica básica
-  List<dynamic> mecanica = DUMMY_QUESTIONS
-      .where((element) => element["category"] == "Mecânica básica")
-      .toList();
-  mecanica.shuffle();
-  var mecanicaFiltrada = mecanica.getRange(0, 2);
-
-  // Direção Defensiva
-  List<dynamic> defensiva = DUMMY_QUESTIONS
-      .where((element) => element["category"] == "Direção defensiva")
-      .toList();
-  mecanica.shuffle();
-  var defensivaFiltrada = defensiva.getRange(0, 2);
-
-  questions.addAll(mecanicaFiltrada);
-  questions.addAll(defensivaFiltrada);
-
-  questions.shuffle();
-  return questions;
-}
-
-var DUMMY_QUESTIONS = [
+[
   {
     "question":
         "O controle da temperatura de um motor é realizado pelo sistema de ",
@@ -8238,7 +8212,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  10 anos para idade inferior a 50 anos ", "value": "c"},
       {"prompt": "  8 anos para qualquer idade ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 398
   },
   {
@@ -8267,7 +8241,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 399
   },
   {
@@ -8279,7 +8253,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  rodovias ", "value": "c"},
       {"prompt": "  vias ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 400
   },
   {
@@ -8292,7 +8266,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  fratura de coluna ", "value": "c"},
       {"prompt": "  fratura do fêmur ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 401
   },
   {
@@ -8320,7 +8294,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 402
   },
   {
@@ -8345,7 +8319,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 403
   },
   {
@@ -8370,7 +8344,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 404
   },
   {
@@ -8383,7 +8357,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  noventa dias ", "value": "c"},
       {"prompt": "  sessenta dias ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 405
   },
   {
@@ -8412,7 +8386,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 406
   },
   {
@@ -8425,7 +8399,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  faróis de neblina e de milha acesos ", "value": "c"},
       {"prompt": "  faróis desligados ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 407
   },
   {
@@ -8438,7 +8412,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  sistema de transmissão ", "value": "c"},
       {"prompt": "  sistema de freios ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 408
   },
   {
@@ -8465,7 +8439,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 409
   },
   {
@@ -8478,7 +8452,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  direção agressiva ", "value": "c"},
       {"prompt": "  direção passiva ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 410
   },
   {
@@ -8496,7 +8470,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  caixa de câmbio, válvulas e pistões ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 411
   },
   {
@@ -8509,7 +8483,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  funcionamento do velocímetro ", "value": "c"},
       {"prompt": "  nível do óleo do motor ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 412
   },
   {
@@ -8522,7 +8496,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  veículo ", "value": "c"},
       {"prompt": "  clima ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 413
   },
   {
@@ -8551,7 +8525,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 414
   },
   {
@@ -8580,7 +8554,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 415
   },
   {
@@ -8593,7 +8567,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  50 km/h ", "value": "c"},
       {"prompt": "  40 km/h ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 416
   },
   {
@@ -8606,7 +8580,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  apreensão do veículo ", "value": "c"},
       {"prompt": "  advertência ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 417
   },
   {
@@ -8633,7 +8607,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 418
   },
   {
@@ -8662,7 +8636,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 419
   },
   {
@@ -8686,7 +8660,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  remover, imediatamente, as vítimas do local ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 420
   },
   {
@@ -8709,7 +8683,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 421
   },
   {
@@ -8736,7 +8710,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 422
   },
   {
@@ -8753,7 +8727,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  ter somente conhecimento de seu veículo ", "value": "c"},
       {"prompt": "  conhecer somente seus direitos ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 423
   },
   {
@@ -8782,7 +8756,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 424
   },
   {
@@ -8795,7 +8769,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  direção ", "value": "c"},
       {"prompt": "  injeção eletrônica ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 425
   },
   {
@@ -8807,7 +8781,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  gasolina ", "value": "c"},
       {"prompt": "  eletricidade ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 426
   },
   {
@@ -8836,7 +8810,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 427
   },
   {
@@ -8865,7 +8839,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 428
   },
   {
@@ -8894,7 +8868,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 429
   },
   {
@@ -8922,7 +8896,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 430
   },
   {
@@ -8935,7 +8909,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  intolerância, descortesia e agressividade ", "value": "c"},
       {"prompt": "  descortesia, egoísmo e obediência às leis ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 431
   },
   {
@@ -8948,7 +8922,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  vertical ", "value": "c"},
       {"prompt": "  semafórica ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 432
   },
   {
@@ -8961,7 +8935,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  média, com quatro pontos na carteira ", "value": "c"},
       {"prompt": "  grave, com sete pontos na carteira ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 433
   },
   {
@@ -8974,7 +8948,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  bateria ", "value": "c"},
       {"prompt": "  correia de transmissão ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 434
   },
   {
@@ -9003,7 +8977,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 435
   },
   {
@@ -9030,7 +9004,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 436
   },
   {
@@ -9055,7 +9029,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 437
   },
   {
@@ -9084,7 +9058,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 438
   },
   {
@@ -9097,7 +9071,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  manter o motor sempre regulado ", "value": "c"},
       {"prompt": "  manter o radiador limpo ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 439
   },
   {
@@ -9109,7 +9083,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  pela bomba-d'água ", "value": "c"},
       {"prompt": "  pela bomba de combustível ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 440
   },
   {
@@ -9125,7 +9099,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  chamar o serviço de resgate, apenas ", "value": "c"},
       {"prompt": "  movimentar o acidentado para local seguro ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 441
   },
   {
@@ -9141,7 +9115,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  suspensão do direito de dirigir ", "value": "c"},
       {"prompt": "  curso de reciclagem e advertência verbal ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 442
   },
   {
@@ -9154,7 +9128,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  veículo ", "value": "c"},
       {"prompt": "  condutor ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 443
   },
   {
@@ -9183,7 +9157,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 444
   },
   {
@@ -9211,7 +9185,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 445
   },
   {
@@ -9236,7 +9210,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 446
   },
   {
@@ -9256,7 +9230,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 447
   },
   {
@@ -9273,7 +9247,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  aumentar o seu nível de concentração ", "value": "c"},
       {"prompt": "  erros e acidentes graves ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 448
   },
   {
@@ -9292,7 +9266,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 449
   },
   {
@@ -9305,7 +9279,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  gravíssima ", "value": "c"},
       {"prompt": "  média ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 450
   },
   {
@@ -9334,7 +9308,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 451
   },
   {
@@ -9347,7 +9321,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  o veículo desengrenado ", "value": "c"},
       {"prompt": "  a marcha reduzida ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 452
   },
   {
@@ -9375,7 +9349,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 453
   },
   {
@@ -9404,7 +9378,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 454
   },
   {
@@ -9417,7 +9391,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  das velas e da bobina ", "value": "c"},
       {"prompt": "  do bico injetor e da bobina ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 455
   },
   {
@@ -9446,7 +9420,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 456
   },
   {
@@ -9459,7 +9433,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  gravíssima ", "value": "c"},
       {"prompt": "  leve ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 457
   },
   {
@@ -9472,7 +9446,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  a intolerância ", "value": "c"},
       {"prompt": "  o controle emocional ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 458
   },
   {
@@ -9488,7 +9462,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  atividade industrial em geral ", "value": "c"},
       {"prompt": "  aumento da circulação de bicicletas ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 459
   },
   {
@@ -9516,7 +9490,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 460
   },
   {
@@ -9542,7 +9516,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 461
   },
   {
@@ -9563,7 +9537,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  o motor está com rotação insuficiente ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 462
   },
   {
@@ -9579,7 +9553,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 463
   },
   {
@@ -9592,7 +9566,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  multa e retenção do veículo ", "value": "c"},
       {"prompt": "  multa, apenas ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 464
   },
   {
@@ -9611,7 +9585,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 465
   },
   {
@@ -9631,7 +9605,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 466
   },
   {
@@ -9643,7 +9617,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  pela bateria e pelo alternador ", "value": "c"},
       {"prompt": "  pelo gerador primário e pela bobina ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 467
   },
   {
@@ -9661,7 +9635,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 468
   },
   {
@@ -9690,7 +9664,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 469
   },
   {
@@ -9702,7 +9676,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  de mão dupla ", "value": "c"},
       {"prompt": "  com canteiro central ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 470
   },
   {
@@ -9718,7 +9692,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  em vias não pavimentadas ", "value": "c"},
       {"prompt": "  em vias urbanas arteriais e coletoras ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 471
   },
   {
@@ -9731,7 +9705,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  trânsito ", "value": "c"},
       {"prompt": "  pedestre ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 472
   },
   {
@@ -9747,7 +9721,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  pneus bem calibrados ", "value": "c"},
       {"prompt": "  defeito no sistema de tração do diferencial ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 473
   },
   {
@@ -9760,7 +9734,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  cabo de embreagem do pedal ", "value": "c"},
       {"prompt": "  embreagem e seu pedal ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 474
   },
   {
@@ -9788,7 +9762,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 475
   },
   {
@@ -9807,7 +9781,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  chuva, sono e buracos na via ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 476
   },
   {
@@ -9830,7 +9804,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 477
   },
   {
@@ -9859,7 +9833,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 478
   },
   {
@@ -9872,7 +9846,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  via de trânsito rápido ", "value": "c"},
       {"prompt": "  via coletora ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 479
   },
   {
@@ -9885,7 +9859,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  câmbio ou platô ", "value": "c"},
       {"prompt": "  acelerador ou pedal ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 480
   },
   {
@@ -9914,7 +9888,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 481
   },
   {
@@ -9943,7 +9917,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 482
   },
   {
@@ -9959,7 +9933,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  acelerar o veículo para ganhar aderência ", "value": "c"},
       {"prompt": "  manter a velocidade e frear com intensidade ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 483
   },
   {
@@ -9972,7 +9946,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  clima e/ou ambiente ", "value": "c"},
       {"prompt": "  via ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 484
   },
   {
@@ -9988,7 +9962,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  prudência e habilidade com o veículo ", "value": "c"},
       {"prompt": "  conhecimento de mecânica veicular e ousadia ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 485
   },
   {
@@ -10001,7 +9975,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  Detran ", "value": "c"},
       {"prompt": "  Conama ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 486
   },
   {
@@ -10029,7 +10003,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 487
   },
   {
@@ -10042,7 +10016,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  o óleo do motor resfriado pela ventoinha ", "value": "c"},
       {"prompt": "  a água pressionada por uma bomba ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 488
   },
   {
@@ -10070,7 +10044,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 489
   },
   {
@@ -10098,7 +10072,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 490
   },
   {
@@ -10118,7 +10092,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  multa e apreensão do veículo ", "value": "c"},
       {"prompt": "  multa, apenas ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 491
   },
   {
@@ -10147,7 +10121,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 492
   },
   {
@@ -10160,7 +10134,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  entre 21h00 e 6h00 ", "value": "c"},
       {"prompt": "  entre 22h00 e 6h00 ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 493
   },
   {
@@ -10179,7 +10153,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  falta de alinhamento e regulagem dos faróis ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 494
   },
   {
@@ -10191,7 +10165,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  suspensão e freios ", "value": "c"},
       {"prompt": "  suspensão e amortecedores ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 495
   },
   {
@@ -10203,7 +10177,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  amarela, verde, vermelha, preta e branca ", "value": "c"},
       {"prompt": "  amarela, vermelha, branca, azul e preta ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 496
   },
   {
@@ -10232,7 +10206,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 497
   },
   {
@@ -10252,7 +10226,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 498
   },
   {
@@ -10265,7 +10239,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  veículo ", "value": "c"},
       {"prompt": "  condutor ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 499
   },
   {
@@ -10293,7 +10267,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 500
   },
   {
@@ -10306,7 +10280,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  multa e suspensão do direito de dirigir ", "value": "c"},
       {"prompt": "  multa, apenas ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 501
   },
   {
@@ -10327,7 +10301,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 502
   },
   {
@@ -10344,7 +10318,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  faróis, freio e pisca-alerta, apenas ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 503
   },
   {
@@ -10356,7 +10330,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  vias coletoras ", "value": "c"},
       {"prompt": "  vias de trânsito rápido ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 504
   },
   {
@@ -10384,7 +10358,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 505
   },
   {
@@ -10397,7 +10371,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  o motor de arranque ", "value": "c"},
       {"prompt": "  as velas de ignição ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 506
   },
   {
@@ -10426,7 +10400,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 507
   },
   {
@@ -10455,7 +10429,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 508
   },
   {
@@ -10468,7 +10442,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  luzes de posição ", "value": "c"},
       {"prompt": "  faróis alto e baixo ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 509
   },
   {
@@ -10495,7 +10469,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 510
   },
   {
@@ -10524,7 +10498,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 511
   },
   {
@@ -10552,7 +10526,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 512
   },
   {
@@ -10565,7 +10539,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  8 anos ", "value": "c"},
       {"prompt": "  10 anos ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 513
   },
   {
@@ -10592,7 +10566,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Meio ambiente",
     "id": 514
   },
   {
@@ -10605,7 +10579,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  remoção do veículo ", "value": "c"},
       {"prompt": "  repreensão ao condutor ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 515
   },
   {
@@ -10634,7 +10608,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 516
   },
   {
@@ -10663,7 +10637,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 517
   },
   {
@@ -10691,7 +10665,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 518
   },
   {
@@ -10713,7 +10687,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 519
   },
   {
@@ -10736,7 +10710,7 @@ var DUMMY_QUESTIONS = [
       },
       {"prompt": "  vento forte e chuva de granizo ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 520
   },
   {
@@ -10749,7 +10723,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  apreensão da CNH ", "value": "c"},
       {"prompt": "  suspensão do direito de dirigir ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 521
   },
   {
@@ -10777,7 +10751,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 522
   },
   {
@@ -10790,7 +10764,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  multa ", "value": "c"},
       {"prompt": "  suspensão do direito de dirigir ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Legislação de trânsito",
     "id": 523
   },
   {
@@ -10810,7 +10784,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Medicina de tráfego",
     "id": 524
   },
   {
@@ -10823,7 +10797,7 @@ var DUMMY_QUESTIONS = [
       {"prompt": "  bomba-d'água ", "value": "c"},
       {"prompt": "  sensor de temperatura da água ", "value": "d"}
     ],
-    "category": "Geral",
+    "category": "Mecânica básica",
     "id": 525
   },
   {
@@ -10846,7 +10820,7 @@ var DUMMY_QUESTIONS = [
         "value": "d"
       }
     ],
-    "category": "Geral",
+    "category": "Direção defensiva",
     "id": 526
   }
-];
+]
